@@ -20,7 +20,7 @@
 
 ## Create SSH Config & Use 1 SSH Key 
 
-- Kemudian membuat konfigurasi SSH untuk lokal dan juga untuk gateway VM dimana dapat masuk menggunakan IP pribadi pada gateway VM.
+- Kemudian membuat konfigurasi SSH untuk lokal dimana dapat masuk menggunakan IP Private server melewati gateway sebagai perantara.
 
 ![image](Media/7.png)
 
