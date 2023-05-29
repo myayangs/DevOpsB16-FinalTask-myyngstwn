@@ -20,6 +20,24 @@
 
 ## Create SSH Config & Use 1 SSH Key 
 
-- 
+- Kemudian membuat konfigurasi SSH untuk lokal dan juga untuk gateway VM dimana dapat masuk menggunakan IP pribadi pada gateway VM.
 
-## UFW Enabled with only Port used allowed
+![image](Media/7.png)
+
+![image](Media/8.png)
+
+- Kemudian menggunakan satu kunci SSH dari lokal server ke semua VM untuk login, CICD, dan juga untuk repositori ke Github. 
+
+![image](Media/9.png)
+
+![image](Media/10.png)
+
+## UFW Enabled with only Port used Allowed
+
+- Kemudian membuat `ansible-playbook` untuk menambahkan firewall pada setiap server dan memasukkan port yang diperlukan.
+
+![image](Media/11.png)
+
+![image](Media/12.png)
+
+![image](Media/13.png)
