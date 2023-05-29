@@ -9,7 +9,7 @@ ssh -T git@github.com
 
 ![image](Media/2.png)
 
-- Kemudian clone repository [fe-dumbmerch](https://github.com/demo-dumbways/fe-dumbmerch) & [be-dumbmerch](https://github.com/demo-dumbways/be-dumbmerch). Lalu tambahkan `git` **Username** and **Email** untuk Pull dan Push.
+- Kemudian clone repositori [fe-dumbmerch](https://github.com/demo-dumbways/fe-dumbmerch) & [be-dumbmerch](https://github.com/demo-dumbways/be-dumbmerch). Lalu mengatur ***username*** dan ***email*** di Git untuk pull dan push.
 
 ```
 git clone https://github.com/demo-dumbways/fe-dumbmerch
