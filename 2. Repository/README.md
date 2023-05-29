@@ -1,6 +1,6 @@
 # Repository
 
-- Pertama, menghubungkan `git` appserver dengan `SSH and GPG Key` github. Dengan cara salin `public key` SSH appserver dan tambahkan ke dalam `SSH Key`. Setelah itu `Test SSH Connection` dengan perintah dibawah ini.
+- Pertama, menghubungkan `git` appserver dengan `SSH and GPG Key` github. Dengan cara salin `public key` SSH appserver dan tambahkan ke dalam `SSH Key` github. Setelah itu `Test SSH Connection` dengan perintah dibawah ini.
 
 ```
 ssh -T git@github.com
