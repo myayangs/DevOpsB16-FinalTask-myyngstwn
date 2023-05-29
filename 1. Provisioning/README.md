@@ -122,8 +122,6 @@ resource "idcloudhost_floating_ip" "ip-yyg-monitoring" {
 
 ![image](Media/Terraform/2b.png)
 
-![image](Media/Terraform/2c.png)
-
 - Kemudian lakukan perintah `terraform apply` mengeksekusi tindakan yang diusulkan dalam rencana Terraform.
 
 ![image](Media/Terraform/3a.png)
@@ -149,7 +147,7 @@ resource "idcloudhost_floating_ip" "ip-yyg-monitoring" {
 
 ![image](Media/Ansible/1.png)
 
-- Kemudian, dapat membuat file `ansible playbook` berdasarkan kebutuhan untuk instalasi di dalam VM.
+- Kemudian membuat file `ansible playbook` berdasarkan kebutuhan untuk instalasi di dalam VM.
 
 ### Install Docker & Node Exporter
 
@@ -181,13 +179,13 @@ ansible-playbook (nama-file).yml
 
 ![image](Media/Ansible/8.png)
 
-- `nginx' sudah terinstall di server gateway.
+- `nginx` sudah terinstall di server gateway.
 
 ![image](Media/Ansible/9.png)
 
 ### Install Jenkins
 
-- Kemudian buat file `jenkins' untuk server cicd dan jalankan.
+- Kemudian buat file `jenkins' on top docker untuk server cicd dan jalankan.
 
 ![image](Media/Ansible/10.png)
 
@@ -199,7 +197,7 @@ ansible-playbook (nama-file).yml
 
 ### Install Prometheus & Grafana
 
-- Kemudian buat file `Prometheus & Grafana` untuk server monitoring dan jalankan.
+- Kemudian buat file `Prometheus & Grafana` on top docker untuk server monitoring dan jalankan.
 
 ![image](Media/Ansible/13.png)
 
