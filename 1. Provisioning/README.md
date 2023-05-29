@@ -185,7 +185,7 @@ ansible-playbook (nama-file).yml
 
 ### Install Jenkins
 
-- Kemudian buat file `jenkins' on top docker untuk server cicd dan jalankan.
+- Kemudian buat file `jenkins` on top docker untuk server cicd dan jalankan.
 
 ![image](Media/Ansible/10.png)
 
