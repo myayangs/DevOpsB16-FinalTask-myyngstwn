@@ -1,6 +1,6 @@
 # Repository
 
-- Pertama, menghubungkan `git` appserver dengan `SSH and GPG Key` github. Dengan cara salin `public key` SSH appserver dan tambahkan ke dalam `SSH Key` github. Setelah itu `Test SSH Connection` dengan perintah dibawah ini.
+- Pertama,  copy SSH Key `.ssh/id_rsa.pub` pada server dan masukkan kedalam config github dengan membuka https://github.com/settings/keys. Lalu test SSH  connection untuk memastikan bahwa sudah terhubung.
 
 ```
 ssh -T git@github.com
@@ -28,7 +28,7 @@ git clone https://github.com/demo-dumbways/be-dumbmerch
 
 ![image](Media/4.png)
 
-- Kemudian masuk ke direktori `fe-dumbmerch` dan mengganti `remote url` menjadi repositori yang dibuat sebelumnya. Setelah itu buat 3 branch baru yaitu **staging**, **production** dan **cicd***. Dan push ke semua branch.
+- Kemudian masuk ke direktori `fe-dumbmerch` dan mengganti `remote url` menjadi repositori yang dibuat sebelumnya. Setelah itu buat 3 branch baru yaitu **staging**, **production** dan **cicd**. Dan push ke semua branch.
 
 ![image](Media/5.png)
 
