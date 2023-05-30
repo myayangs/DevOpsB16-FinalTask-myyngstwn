@@ -49,4 +49,3 @@ git clone https://github.com/demo-dumbways/be-dumbmerch
 - setelah itu cek pada repositori jika branch sudah di tambahkan.
 
 ![image](Media/9.png)
-
