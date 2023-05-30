@@ -1,6 +1,6 @@
 # Repository
 
-- Pertama,  copy SSH Key `.ssh/id_rsa.pub` pada server dan masukkan kedalam config github dengan membuka https://github.com/settings/keys. Lalu test SSH  connection untuk memastikan bahwa sudah terhubung.
+- Pertama,  copy SSH Key `.ssh/id_rsa.pub` pada server dan masukkan kedalam config github dengan membuka https://github.com/settings/keys. Lalu test SSH  connection untuk memastikan bahwa sudah terhubung dengan perintah dibawah ini.
 
 ```
 ssh -T git@github.com
