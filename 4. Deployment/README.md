@@ -8,7 +8,7 @@
 
 - Kemudian salin ***.gitignore*** ke ***.dockerignore***.
 
-- Kemudian membuat ***.env*** yaitu untuk menghubungkan frontend dan backend.
+- Kemudian membuat ***.env*** (environment) yaitu untuk menghubungkan frontend dan backend.
 
 ```
 REACT_APP_BASEURL=http://api.yyg.studentdumbways.my.id/api/v1
@@ -36,7 +36,7 @@ docker build -t myyngstwn/be-dumbmerch-production:latest .
 
 #### Backend
 
-- Pertama, pindah ke branch staging frontend. 
+- Pertama, ke folder backend lalu pindah ke branch staging.  
 
 - Kemudian membuat ***.env*** (environment) yaitu untuk menghubungkan frontend dan backend.
 
