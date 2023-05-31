@@ -246,6 +246,106 @@ docker compose up -d
 
 ![image](Media/Production/7.png)
 
-## CI/CD
+- Kemudian docker login untuk mempush/menaruh images ke dalam docker hub.
 
-- 
+## CI/CD : Jenkins
+
+- Pertama masukkan password yang digenerate Jenkins secara otomatis untuk login sebagai admin.
+
+- Kemudian **select plugin to install**. Dan menambah plugin tambahan, yaitu **ssh agent**.
+
+![image](Media/CICD/1.png)
+
+![image](Media/CICD/2.png)
+
+![image](Media/CICD/3.png)
+
+- Kemudian bisa memasukkan `username` dan `password` baru.
+
+![image](Media/CICD/4.png)
+
+![image](Media/CICD/5.png)
+
+- Kemudian membuat ***credentials*** dan menambahkan SSH Private key ke dalam Jenkins.
+
+![image](Media/CICD/6.png)
+
+![image](Media/CICD/7.png)
+
+![image](Media/CICD/8.png)
+
+![image](Media/CICD/9.png)
+
+- Kemudian tambahkan plugin ***Multibranch Scan Webhook Trigger.*** Untuk mengaktifkan trigger pada saat ada update di repository akun github dan ***Discord Notifier*** untuk notifikasi. 
+
+![image](Media/CICD/10.png)
+
+![image](Media/CICD/11.png)
+
+- Kemudian membuat **job** baru frontend. Pilih multibranch pipeline, dikarenakan kita ingin membuat dengan banyak branch.
+
+![image](Media/CICD/12.png)
+
+![image](Media/CICD/13.png)
+
+- Kemudian pilih git untuk repositorynya dan pilih credentials.
+
+![image](Media/CICD/14.png)
+
+- Kemudian mengaktifkan Multibranch Scan Webhook Trigger.
+
+![image](Media/CICD/15.png)
+
+- Kemudian membuat file Jenkins pada masing-masing branch.
+
+***Jenkinsfile staging***
+
+![image](Media/CICD/16.png)
+
+***Jenkinsfile production***
+
+![image](Media/CICD/17.png)
+
+- Kemudian mengaktifkan trigger pada repository akun github ditambahkan di bagian Webhooks.
+
+![image](Media/CICD/18.png)
+
+- Kemudian jalankan **Scan Multibranch Pipeline**.
+
+![image](Media/CICD/19.png)
+
+![image](Media/CICD/20.png)
+
+- Pada saat muncul centang dan berwarna hijau, maka trigger sudah berjalan dengan baik.
+
+![image](Media/CICD/21.png)
+
+- Dan notifikasi discord berhasil muncul.
+
+![image](Media/CICD/22.png)
+
+- Kemudian Untuk backend caranya sama dengan frontend.
+
+![image](Media/CICD/23.png)
+
+![image](Media/CICD/24.png)
+
+![image](Media/CICD/25.png)
+
+![image](Media/CICD/26.png)
+
+![image](Media/CICD/27.png)
+
+![image](Media/CICD/28.png)
+
+![image](Media/CICD/29.png)
+
+![image](Media/CICD/30.png)
+
+![image](Media/CICD/31.png)
+
+![image](Media/CICD/32.png)
+
+![image](Media/CICD/33.png)
+
+![image](Media/CICD/34.png)
