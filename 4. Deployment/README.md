@@ -105,7 +105,11 @@ services:
       - 3000:3000
 ```
 
-- Kemudian jalankan docker `compose up -d` 
+- Kemudian jalankan dengan perintah dibawah ini.
+
+```
+docker compose up -d
+``` 
 
 ![image](Media/Staging/3.png)
 
