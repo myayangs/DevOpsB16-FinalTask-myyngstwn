@@ -47,4 +47,3 @@
 - Discord notifikasi sudah berhasil.
 
 ![image](Media/14.png)
-
