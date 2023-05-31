@@ -6,6 +6,86 @@
 
 ![image](Media/1.png)
 
+- Kemudian membuat reverse-proxy pada setiap server.
+
+```
+#appserver-frontend
+server {
+    server_name yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.67:3000;
+    } 
+}
+
+#appserver-backend
+server {
+    server_name api.yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.67:5000;
+    }
+}
+
+#node-appserver
+server {
+    server_name node-app.yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.67:9100;
+    }
+}
+
+
+#Jenkins-CICD
+server {
+    server_name cicd.yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.196:8080;
+    }
+}
+
+#node-CICD
+server {
+    server_name node-cicd.yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.196:9100;
+    }
+}
+
+#node-gateway
+server {
+    server_name node-gateway.yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.224:9100;
+    }
+}
+
+#node-monitoring
+server {
+    server_name node-monitoring.yyg.studentdumbways.my.id;
+
+    location / {
+            proxy_pass http://10.32.142.73:9100;
+    }
+}
+
+#prometheus
+server {
+    server_name prom.yyg.studentdumbways.my.id;
+    location / {
+            proxy_pass http://10.32.142.73:9090;
+    }
+
+}
+
+#grafana
+server {
+    server_name dashboard.yyg.studentdumbways.my.id;
+    location / {
+            proxy_set_header Host dashboard.yyg.studentdumbways.my.id;
+            proxy_pass http://10.32.142.73:3000;
+    }
+}
+```
+
 ## SSL Certbot using wildcard
 
 - Kemudian install Certbot terlebih dahulu. Untuk menginstal Certbot, dapat mengikuti dokumentasi yang disediakan [cerbot](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal&tab=wildcard).
