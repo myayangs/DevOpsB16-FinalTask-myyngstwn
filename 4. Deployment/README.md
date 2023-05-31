@@ -129,7 +129,6 @@ docker compose up -d
 
 ```
 REACT_APP_BASEURL=http://api.yyg.studentdumbways.my.id/api/v1
-
 ```
 
 - Kemudian membuat ***Dockerfile*** untuk membuat docker image.
@@ -252,7 +251,7 @@ docker compose up -d
 
 - Pertama masukkan password yang digenerate Jenkins secara otomatis untuk login sebagai admin.
 
-- Kemudian **select plugin to install**. Dan menambah plugin tambahan, yaitu **ssh agent**.
+- Kemudian **select plugin to install**. Dan menambah plugin, yaitu **ssh agent**.
 
 ![image](Media/CICD/1.png)
 
@@ -316,7 +315,7 @@ docker compose up -d
 
 ![image](Media/CICD/20.png)
 
-- Pada saat muncul centang dan berwarna hijau, maka trigger sudah berjalan dengan baik.
+- Kemudian pada saat muncul centang dan berwarna hijau, maka trigger sudah berjalan dengan baik.
 
 ![image](Media/CICD/21.png)
 
@@ -324,7 +323,7 @@ docker compose up -d
 
 ![image](Media/CICD/22.png)
 
-- Kemudian Untuk backend caranya sama dengan frontend.
+- Kemudian Untuk backend langkah-langkahnya sama seperti frontend.
 
 ![image](Media/CICD/23.png)
 
