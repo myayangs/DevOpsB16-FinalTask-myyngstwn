@@ -1,9 +1,9 @@
 # Deployment
 
 ## Application
-### Docker image frontend & backend Staging
+## Docker image frontend & backend Staging
 
-#### Frontend
+### Frontend
 - Pertama, ke folder frontend lalu pindah ke branch staging. 
 
 - Kemudian salin ***.gitignore*** ke ***.dockerignore***.
@@ -26,7 +26,7 @@ EXPOSE 3000
 CMD [ "npm", "start"]
 ```
 
-- Kemudian Build image dengan perintah dibawah ini.
+- Kemudian build image dengan perintah dibawah ini.
 
 ```
 docker build -t myyngstwn/be-dumbmerch-production:latest .
@@ -34,7 +34,7 @@ docker build -t myyngstwn/be-dumbmerch-production:latest .
 
 ![image](Media/Staging/1.png)
 
-#### Backend
+### Backend
 
 - Pertama, ke folder backend lalu pindah ke branch staging.  
 
@@ -61,7 +61,7 @@ EXPOSE 5000
 CMD ["go", "run", "main.go"]
 ```
 
-- Kemudian Build image dengan perintah dibawah ini.
+- Kemudian build image dengan perintah dibawah ini.
 
 ```
 docker build -t myyngstwn/be-dumbmerch-production:latest .
@@ -69,7 +69,7 @@ docker build -t myyngstwn/be-dumbmerch-production:latest .
 
 ![image](Media/Staging/2.png)
 
-#### Deploy Staging
+### Deploy Staging
 
 - Pertama, membuat file ***compose.yml*** untuk docker compose.
 
