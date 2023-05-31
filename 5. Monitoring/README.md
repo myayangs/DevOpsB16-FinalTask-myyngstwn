@@ -9,7 +9,7 @@
 
 ![image](Media/2.png)
 
-- Kemudian setup Prometheus yang berfungsi sebagai sumber data di dalam Grafana.
+- Kemudian setup ***data sources*** grafana yaitu prometheus yang berfungsi sebagai sumber datanya.
 
 ![image](Media/3.png)
 
