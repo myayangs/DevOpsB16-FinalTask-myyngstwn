@@ -29,7 +29,7 @@ CMD [ "npm", "start"]
 - Kemudian build image dengan perintah dibawah ini.
 
 ```
-docker build -t myyngstwn/be-dumbmerch-production:latest .
+docker build -t myyngstwn/be-dumbmerch-staging:latest .
 ```
 
 ![image](Media/Staging/1.png)
@@ -64,7 +64,7 @@ CMD ["go", "run", "main.go"]
 - Kemudian build image dengan perintah dibawah ini.
 
 ```
-docker build -t myyngstwn/be-dumbmerch-production:latest .
+docker build -t myyngstwn/be-dumbmerch-staging:latest .
 ```
 
 ![image](Media/Staging/2.png)
